@@ -6,10 +6,10 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-libaes = "*"
-argon2 = "*"
-serde = { version="*", features = ["derive"], optional = true }
-rmp-serde = { version="*", optional = true }
+libaes = "0.6.5"
+argon2 = "0.5.2"
+serde = { version="1.0.188", features = ["derive"], optional = true }
+rmp-serde = { version="1.1.2", optional = true }
 
 [features]
 serde = ["dep:serde", "dep:rmp-serde"]

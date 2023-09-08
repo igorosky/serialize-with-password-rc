@@ -4,7 +4,7 @@ use crate::*;
 fn test_serialize() {
     let example_data = b"some data";
     let password = b"password";
-    let encrypted = serialize(example_data, password);
+    let encrypted = serialize(example_data, password).unwrap();
     assert_ne!(example_data.to_vec(), encrypted);
     assert!(is_encrypted(&encrypted).unwrap());
     assert_eq!(example_data.to_vec(), deserialize(&encrypted, password).unwrap());
