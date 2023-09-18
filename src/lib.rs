@@ -206,7 +206,7 @@ pub fn deserialize_no_pass(data: &[u8]) -> Result<Vec<u8>> {
     Err(Error::DataIsEncrypted)
 }
 
-/// Returs whether data is encrypted
+/// Returns whether data is encrypted
 /// For random non empty data returns random bool value
 /// 
 /// # Error
@@ -235,7 +235,7 @@ pub fn is_encrypted(data: &[u8]) -> Result<bool> {
 
 #[cfg(feature = "serde")]
 mod serde_feature {
-    //! # Examples
+    //! bbbb# Examples
     //! 
     //! ## Serialize serde with password
     //! 
